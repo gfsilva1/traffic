@@ -1,0 +1,2 @@
+class PercursosController < ApplicationController
+end

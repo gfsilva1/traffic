@@ -1,0 +1,2 @@
+class TrajetosController < ApplicationController
+end
