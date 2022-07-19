@@ -1,1 +1,9 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+Traffic-clairvouyant is the best way to antecipate traffic on Holidays!
+
+Developed by three Lewagon students from Brazil, France and Portugal.
+
+Technologies used:
+  - Ruby on Rails
+  - Postgresql
+  - Sidekiq
+  - Stimulus
