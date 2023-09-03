@@ -23,7 +23,6 @@ gem 'redis', '~> 4.0'
 gem 'sidekiq'
 gem 'sidekiq-failures', '~> 1.0'
 # Use Active Model has_secure_password
-gem 'jsbundling-rails'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'stimulus-rails'
 

@@ -143,8 +143,6 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jsbundling-rails (1.1.2)
-      railties (>= 6.0.0)
     libv8-node (18.16.0.0-x86_64-darwin)
     libv8-node (18.16.0.0-x86_64-linux)
     listen (3.8.0)
@@ -331,7 +329,6 @@ DEPENDENCIES
   gon
   google-maps
   jbuilder (~> 2.7)
-  jsbundling-rails
   listen (~> 3.2)
   mini_racer
   noticed (~> 1.4)
