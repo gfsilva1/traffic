@@ -37,7 +37,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <script src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['MAPS_API_KEY']%>&libraries=places&callbacks=initAutocomplete" defer></script>
     <%= include_gon %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= javascript_include_tag "/javascript/application.js", "data-turbo-track": "reload", defer: true %>
     <link rel="stylesheet" href="https://ga.jspm.io/npm:flatpickr@4.6.9/dist/flatpickr.min.css">
   </head>
 
