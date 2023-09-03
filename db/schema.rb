@@ -2,8 +2,8 @@
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
-# This file is the source Rails uses to define your schema when running `rails
-# db:schema:load`. When creating a new database, `rails db:schema:load` tends to
+# This file is the source Rails uses to define your schema when running `bin/rails
+# db:schema:load`. When creating a new database, `bin/rails db:schema:load` tends to
 # be faster and is potentially less error prone than running all of your
 # migrations from scratch. Old migrations may fail to apply correctly if those
 # migrations use external dependencies or application code.
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2021_09_09_171516) do
 
   create_table "notifications", force: :cascade do |t|
     t.string "recipient_type", null: false
-    t.bigint "recipient_id", null: false
+    t.integer "recipient_id", null: false
     t.string "type", null: false
     t.jsonb "params"
     t.datetime "read_at"
@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 2021_09_09_171516) do
   end
 
   create_table "origin_destination_routes", force: :cascade do |t|
-    t.bigint "origin_id", null: false
-    t.bigint "destination_id", null: false
+    t.integer "origin_id", null: false
+    t.integer "destination_id", null: false
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2021_09_09_171516) do
   end
 
   create_table "road_cars", force: :cascade do |t|
-    t.bigint "road_id", null: false
+    t.integer "road_id", null: false
     t.integer "number_of_cars"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -71,8 +71,8 @@ ActiveRecord::Schema.define(version: 2021_09_09_171516) do
   end
 
   create_table "routes", force: :cascade do |t|
-    t.bigint "road_id", null: false
-    t.bigint "origin_destination_route_id", null: false
+    t.integer "road_id", null: false
+    t.integer "origin_destination_route_id", null: false
     t.integer "step"
     t.integer "duration"
     t.datetime "created_at", precision: 6, null: false
@@ -84,8 +84,8 @@ ActiveRecord::Schema.define(version: 2021_09_09_171516) do
   create_table "trips", force: :cascade do |t|
     t.date "date"
     t.integer "time"
-    t.bigint "user_id", null: false
-    t.bigint "origin_destination_routes_id", null: false
+    t.integer "user_id", null: false
+    t.integer "origin_destination_routes_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "actual_duration"

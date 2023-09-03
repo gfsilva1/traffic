@@ -21,9 +21,8 @@
 @import "config/bootstrap_variables";
 
 // External libraries
-@import "bootstrap/scss/bootstrap";
-@import "font-awesome-sprockets";
 @import "font-awesome";
+@import "bootstrap";
 
 // Your CSS partials
 @import "components/index";
@@ -34,7 +33,6 @@
 @import "pages/info";
 @import "pages/mytrips";
 @import "components/charts";
-@import "flatpickr/dist/flatpickr.min";
 
 $edcolor: red;
 
